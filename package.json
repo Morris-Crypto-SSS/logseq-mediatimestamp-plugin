@@ -1,11 +1,11 @@
 {
-  "name": "<insert-plugin-name>",
-  "author": "",
-  "description": "",
+  "name": "logseq-mediatimestamp-plugin",
+  "author": "benjypng",
+  "description": "Logseq plugin to insert media timestamps.",
   "license": "MIT",
   "logseq": {
-    "id": "<insert-plugin-name>",
-    "title": "<insert-plugin-name>",
+    "id": "logseq-mediatimestamp-plugin",
+    "title": "logseq-mediatimestamp-plugin",
     "icon": "./icon.svg",
     "main": "dist/index.html"
   },
@@ -24,7 +24,7 @@
         "@semantic-release/github",
         {
           "assets": [
-            "<insert-plugin-name>.zip"
+            "logseq-mediatimestamp-plugin.zip"
           ]
         }
       ]
@@ -39,7 +39,6 @@
     "@eslint/js": "^9.39.1",
     "@types/eslint": "^9.6.1",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/eslint__js": "^9.14.0",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
