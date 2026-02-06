@@ -225,7 +225,7 @@ const main = async () => {
 
   // Initialize floating player with settings
   const floatingPlayerEnabled = logseq.settings?.floatingPlayerEnabled === true || logseq.settings?.floatingPlayerEnabled === undefined
-  const floatingPlayerSize = (logseq.settings?.floatingPlayerSize as 'small' | 'medium' | 'large' | 'xlarge') ?? 'medium'
+  const floatingPlayerSize = (logseq.settings?.floatingPlayerSize as 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge') ?? 'medium'
 
   initFloatingPlayer({
     enabled: floatingPlayerEnabled,
@@ -236,7 +236,7 @@ const main = async () => {
   logseq.onSettingsChanged((newSettings) => {
     updateFloatingPlayerSettings({
       enabled: newSettings.floatingPlayerEnabled ?? true,
-      size: (newSettings.floatingPlayerSize as 'small' | 'medium' | 'large' | 'xlarge') ?? 'medium',
+      size: (newSettings.floatingPlayerSize as 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge') ?? 'medium',
     })
   })
 }

@@ -14,7 +14,7 @@ export const settings: SettingSchemaDesc[] = [
     default: 'medium',
     title: 'Floating Player Size',
     description: 'Size of the floating video player.',
-    enumChoices: ['small', 'medium', 'large', 'xlarge'],
+    enumChoices: ['small', 'medium', 'large', 'xlarge', 'xxlarge', 'xxxlarge'],
     enumPicker: 'select',
   },
 ]

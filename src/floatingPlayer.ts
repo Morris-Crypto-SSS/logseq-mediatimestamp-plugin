@@ -10,7 +10,7 @@
 
 interface FloatingPlayerSettings {
     enabled: boolean
-    size: 'small' | 'medium' | 'large' | 'xlarge'
+    size: 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge'
 }
 
 interface Position {
@@ -30,6 +30,8 @@ const SIZE_MAP = {
     medium: { width: 320, height: 180 },
     large: { width: 400, height: 225 },
     xlarge: { width: 480, height: 270 },
+    xxlarge: { width: 640, height: 360 },
+    xxxlarge: { width: 800, height: 450 },
 }
 
 // State
